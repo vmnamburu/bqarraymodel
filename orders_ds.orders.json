@@ -1,0 +1,41 @@
+[
+  {
+    "name": "order_id", 
+    "type": "INTEGER"
+  }, 
+  {
+    "name": "customer_id", 
+    "type": "INTEGER"
+  }, 
+  {
+    "name": "order_date", 
+    "type": "DATE"
+  }, 
+  {
+    "fields": [
+      {
+        "name": "line_no", 
+        "type": "INTEGER"
+      }, 
+      {
+        "name": "item_id", 
+        "type": "INTEGER"
+      }, 
+      {
+        "name": "item_name", 
+        "type": "STRING"
+      }, 
+      {
+        "name": "item_price", 
+        "type": "INTEGER"
+      }, 
+      {
+        "name": "item_quantity", 
+        "type": "INTEGER"
+      }
+    ], 
+    "mode": "REPEATED", 
+    "name": "order_lines", 
+    "type": "RECORD"
+  }
+]
