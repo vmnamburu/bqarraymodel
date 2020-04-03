@@ -14,6 +14,7 @@ join `orders_ds.order_lines` line on (hdr.order_id = line.order_id and hdr.order
 group by 1
 
 -- 1.3 Item Total
+-- Join is actually not required, but included to represent the model requires join
 select line.item_name
 ,sum(line.item_quantity * line.item_price) monthly_total
 from `orders_ds.order_header` hdr 
